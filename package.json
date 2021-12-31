@@ -2,7 +2,7 @@
   "name": "mesto",
   "version": "0.0.1",
   "description": "Сайт - Mesto",
-  "main": "./src/pages/index.js",
+  "main": "./src/pages/index.jsx",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve"
@@ -14,12 +14,13 @@
   "author": "Alex Kucher",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/G28XYZ/mesto/issues"
+    "url": "https://github.com/G28XYZ/TodoListReact/issues"
   },
-  "homepage": "https://github.com/G28XYZ/mesto#readme",
+  "homepage": "https://github.com/G28XYZ/TodoListReact#readme",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
@@ -33,6 +34,9 @@
     "webpack-dev-server": "^4.7.1"
   },
   "dependencies": {
-    "core-js": "^3.20.1"
+    "core-js": "^3.20.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
   }
 }
