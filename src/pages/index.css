@@ -1,0 +1,13 @@
+.todo-app {
+  margin: 2rem auto 0 auto;
+  max-width: 400px;
+}
+
+.top-panel {
+  margin: 1rem 0;
+}
+
+@import url(../blocks/todolist/TodoList.css);
+@import url(../blocks/todolistitem/TodoListItem.css);
+@import url(../blocks/appheader/AppHeader.css);
+@import url(../blocks/searchpanel/SearchPanel.css);
