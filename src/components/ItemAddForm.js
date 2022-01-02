@@ -1,13 +1,32 @@
 import React, { Component } from "react";
 
 class ItemAddFrom extends Component {
+  state = {
+    label: "",
+  };
+
+  onLabelChange = (event) => {
+    this.setState({
+      label: event.target.value,
+    });
+  };
+
+  onSubmit = (event) => {
+    event.preventDefault();
+    this.props.addItem(this.state.label);
+  };
+
   render() {
     return (
-      <div className="item-add-form">
-        <button className="btn btn-outline-secondary" onClick={() => this.props.addItem("Hello")}>
-          Add Item
-        </button>
-      </div>
+      <form className="item-add-form d-flex" onSubmit={this.onSubmit}>
+        <input
+          type="text"
+          className="form-control"
+          onChange={this.onLabelChange}
+          placeholder="What needs to be done"
+        ></input>
+        <button className="btn btn-outline-secondary">Add Item</button>
+      </form>
     );
   }
 }
